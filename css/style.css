@@ -1,0 +1,78 @@
+body {
+  background-color: #000;
+}
+
+.wrapper {
+  background-color: #444;
+  margin: 20px auto;
+  width: 1100px;
+}
+
+/* Styles for mycarousel*/
+
+.mycarousel {
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 562px;
+}
+
+.mycarousel__list {    
+  margin: auto;
+  position: relative;
+  width: 10000px;
+}
+ 
+.mycarousel__item {
+  float: left;
+  height: 256px;
+  margin: 7px 50px 7px 0;
+  position: relative;
+  width: 256px;
+}
+.mycarousel__item img {
+  height: 256px;
+  width: 256px;
+}
+
+.mycarousel__buttons {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/*Шаблонизатор*/
+h1 {
+  text-align: center;
+  padding: 20px 0 30px 0
+}
+
+div.content {
+  margin: 50px 350px 50px 350px;
+  background-color: #fff;
+}
+
+.signature {
+  padding: 30px 10px 20px 10px;
+}
+
+ul {
+  margin: 30px 10px 0px 25px;
+  padding: 0px 0px 0px 0px;
+}
+
+div.sub-content {
+  border-top: 1px solid grey;
+  padding: 30px 10px 20px 10px;
+}
+
+.subtitle {
+  padding: 0px 0px 0px 0px;
+}
+
+.p-margin-top-only {
+  padding: 30px 0px 0px 0px;
+}
+
+#userPhoto {
+  text-align: center;
+}

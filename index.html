@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Демонстрация: плагин и шаблонизатор</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lodash.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mycarousel.js"></script>
+  <script type="text/javascript" src="js/lib.js"></script>
+  
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="mycarousel">
+      <ul class="mycarousel__list">
+        <li class="mycarousel__item">
+          <img src="img/img_001.png">
+        </li>
+        <li class="mycarousel__item">
+          <img src="img/img_002.png">
+        </li>
+        <li class="mycarousel__item">
+          <img src="img/img_003.png">
+        </li>
+        <li class="mycarousel__item">
+          <img src="img/img_004.png">
+        </li>
+        <li class="mycarousel__item">
+          <img src="img/img_005.png">
+        </li>
+      </ul>
+    </div>
+    <div class="mycarousel__buttons"> 
+      <button id="prev">&lt;&lt;</button>
+      <button id="next">&gt;&gt;</button>
+    </div>
+  </div>
+
+  <script type="text/template" id="tmpl-profile">
+    <div class="content">
+      <h1><%=profileName%></h1>
+      <div id="userPhoto">
+        <img src="img/foto.jpg" alt="Здесь должно быть фото" width="20%">
+      </div>
+      <p class="signature"><%=workplace%></p>
+      <div class="sub-content">
+        <p class="subtitle">Хочу учить Фронтенд потому что:</p>
+        <ul>
+          <% for (var i = 0; i < reasons.length; i++) {%>
+            <li><%=reasons[i]%></li>
+          <%};%>
+        </ul>
+      </div>
+      <div class="sub-content">
+        <p class="subtitle">Мой контактный телефон:</p>
+        <p class="user-info"><%=phoneNumber%></p>
+        <p class="p-margin-top-only">Мой профиль Facebook:</p>
+        <p class="user-info"><a href="<%=facebook%>" target="_blank">Facebook.com</a></p>
+      </div>
+      <div class="sub-content">
+        <p class="subtitle">Мой фидбек:</p>
+        <p class="user-info"><%=feedback%></p>   
+      </div>
+    </div>
+  </script>
+
+  </body>
+</html>
